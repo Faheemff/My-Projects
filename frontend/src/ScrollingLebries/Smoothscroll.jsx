@@ -2,12 +2,11 @@ import React, { useEffect, useRef } from 'react'
 import Lenis from 'lenis'
 
 const Smoothscroll = ({ children }) => {
-    const lenis = useRef(ull);
+    const lenis = useRef(null);
 
     useEffect(() => {
         lenis.current = new Lenis({
-            duration: 1.5,
-            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            duration: 3,
             smooth: true,
         });
 
