@@ -6,7 +6,7 @@ const Smoothscroll = ({ children }) => {
 
     useEffect(() => {
         lenis.current = new Lenis({
-            duration: 3,
+            duration: 2,
             smooth: true,
         });
 
