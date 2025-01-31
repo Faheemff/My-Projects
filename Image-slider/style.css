@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    overflow: hidden;
+} */
+
+/* .slider {
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.9s ease-in;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+} */
+
+
+/* .container {
+    background-color: red;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    transition: all ease 3s;
+    overflow: hidden;
+}
+.slide {
+    width: 100%;
+    max-width: 800px;
+}
+.slide img {
+    height: 100%; */
+/* width: 1000px;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+*/
+
+.container {
+    /* background-color: red; */
+    height: 70%;
+    width: 30%;
+    border: 1px solid wheat;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transform: translateX(0);
+    transition: all ease 3s;
+}
+
+.slide img {
+    max-width: none;
+    max-height: none;
+    width: 600px;
+    height: auto;
+}
+
+
+.button {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 400px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.button #back,
+#next {
+    background: powderblue;
+    padding: 20px 40px;
+    border: 0;
+    outline: 0;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    /* color: wheat; */
+}
